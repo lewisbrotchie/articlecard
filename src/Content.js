@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Profile from "./Profile";
+import Like from "./Like";
+import Comment from "./Comment";
 
 class Content extends Component {
   render() {
@@ -17,6 +19,12 @@ class Content extends Component {
         </div>
         <div>
           <Profile />
+        </div>
+        <div>
+          <Like />
+        </div>
+        <div>
+          <Comment />
         </div>
       </div>
     );
