@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ProfilePic from "./ProfilePic";
 import styled from "styled-components";
+import Username from "./Username";
 
 const Wrapper = styled.div`
   display: flex;
@@ -10,7 +11,7 @@ const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const Text = styled.h5`
+const ReadingTime = styled.h6`
   margin: 10px;
 `;
 
@@ -22,8 +23,8 @@ class Profile extends Component {
       <Wrapper>
         <ProfilePic />
         <TextWrapper>
-          <Text>Ipsum Lorem</Text>
-          <Text>Reading Time</Text>
+          <Username />
+          <ReadingTime>Reading Time</ReadingTime>
         </TextWrapper>
       </Wrapper>
     );

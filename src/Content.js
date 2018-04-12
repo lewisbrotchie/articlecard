@@ -14,16 +14,23 @@ const SocialWrapper = styled.div`
   margin-left: auto;
   margin-top: auto;
 `;
+const ContentDescription = styled.p`
+  margin: 7px;
+`;
+const ContentHeader = styled.h3`
+  margin: 7px;
+`;
+
 class Content extends Component {
   render() {
     return (
       <div>
-        <h3>Lorem Ipsum</h3>
-        <p>
+        <ContentHeader>Lorem Ipsum</ContentHeader>
+        <ContentDescription>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididuntco laboris nisi ut aliquip ex ea commodo
           consequat.
-        </p>
+        </ContentDescription>
         <Wrapper>
           <Profile />
           <SocialWrapper>
