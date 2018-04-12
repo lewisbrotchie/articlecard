@@ -7,10 +7,23 @@ const Picture = styled.img`
 `;
 
 class ContextPicture extends Component {
-  render() {
-    const imgLink = "https://unsplash.it/500/200?random=592";
+  constructor(props) {
+    super(props);
+    this.state = {
+      img: ""
+    };
+  }
 
-    return <Picture src={imgLink} height="200" alt="random" />;
+  render() {
+    return (
+      <Picture
+        src={
+          "http://unsplash.it/500/200?random=" + Math.floor(Math.random() * 500)
+        }
+        height="200"
+        alt="random"
+      />
+    );
   }
 }
 
