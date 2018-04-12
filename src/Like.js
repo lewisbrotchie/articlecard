@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import styled from "styled-components";
+
+const LikeIcon = styled.h5`
+  margin: 10px;
+`;
 
 class Like extends Component {
   render() {
-    return <h6>Like</h6>;
+    return <LikeIcon>Like</LikeIcon>;
   }
 }
 

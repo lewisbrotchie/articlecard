@@ -6,13 +6,9 @@ class Card extends Component {
   render() {
     return (
       <div>
-        <div>
-          <p>Card</p>
-          <ContextPicture />
-        </div>
-        <div>
-          <Content />
-        </div>
+        <p>Card</p>
+        <ContextPicture />
+        <Content />
       </div>
     );
   }

@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import styled from "styled-components";
+
+const CommentIcon = styled.h5`
+  margin: 10px;
+`;
 
 class Comment extends Component {
   render() {
-    return <h6>Comment</h6>;
+    return <CommentIcon>Comment</CommentIcon>;
   }
 }
 

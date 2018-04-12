@@ -1,14 +1,29 @@
 import React, { Component } from "react";
 import ProfilePic from "./ProfilePic";
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+const Text = styled.h5`
+  margin: 10px;
+`;
 
 class Profile extends Component {
   render() {
     return (
-      <div>
+      <Wrapper>
         <ProfilePic />
-        <h5>Ipsum Lorem</h5>
-        <h6>Reading Time</h6>
-      </div>
+        <TextWrapper>
+          <Text>Ipsum Lorem</Text>
+          <Text>Reading Time</Text>
+        </TextWrapper>
+      </Wrapper>
     );
   }
 }
