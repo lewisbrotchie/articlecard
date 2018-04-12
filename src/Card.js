@@ -14,7 +14,7 @@ const CardStyle = styled.div`
   width: 500px;
   margin: 30px;
   background: #fff;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   &:hover {
