@@ -10,11 +10,10 @@ const Wrapper = styled.div`
 `;
 const SocialWrapper = styled.div`
   display: flex;
-  flex-direction row;
+  flex-direction: row;
   margin-left: auto;
   margin-top: auto;
 `;
-
 class Content extends Component {
   render() {
     return (

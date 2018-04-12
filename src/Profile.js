@@ -14,6 +14,8 @@ const Text = styled.h5`
   margin: 10px;
 `;
 
+//TODO: User randomuser.me api to generate random profile (props - state?)
+
 class Profile extends Component {
   render() {
     return (
