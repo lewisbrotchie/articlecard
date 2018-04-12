@@ -4,6 +4,8 @@ import styled from "styled-components";
 const UsernameStyle = styled.h5`
   margin: 10px;
   margin-top: 15px;
+  margin-left: 0;
+  padding-top: 10px;
 `;
 
 class Username extends React.Component {

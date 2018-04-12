@@ -7,13 +7,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
 `;
-const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-const ReadingTime = styled.h6`
-  margin: 10px;
-`;
 
 //TODO: User randomuser.me api to generate random profile (props - state?)
 
@@ -22,10 +15,7 @@ class Profile extends Component {
     return (
       <Wrapper>
         <ProfilePic />
-        <TextWrapper>
-          <Username />
-          <ReadingTime>Reading Time</ReadingTime>
-        </TextWrapper>
+        <Username />
       </Wrapper>
     );
   }

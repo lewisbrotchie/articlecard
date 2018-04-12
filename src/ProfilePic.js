@@ -7,10 +7,24 @@ const Pic = styled.img`
 `;
 
 class ProfilePic extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      img: ""
+    };
+  }
+  componentDidMount() {
+    fetch("https://randomuser.me/api/?format=json")
+      .then(response => response.json())
+      .then(data => {
+        const img = data.results[0].picture.thumbnail;
+        this.setState({ img });
+      })
+      .catch(e => console.log(e));
+  }
+
   render() {
-    const imgLink =
-      "https://s3.eu-central-1.amazonaws.com/artistarea.gallereplay.com/production/user_9/picture_2405201614728.jpg";
-    return <Pic src={imgLink} height="50" alt="Profile" />;
+    return <Pic src={this.state.img} height="50" alt="Profile" />;
   }
 }
 
