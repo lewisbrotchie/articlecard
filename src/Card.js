@@ -15,10 +15,34 @@ const CardStyle = styled.div`
   margin: 30px;
   background: #fff;
   border-radius: 4px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15), 0 8px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  &:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0) 80%
+    );
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+  }
   &:hover {
-    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.45), 0 14px 14px rgba(0, 0, 0, 0.28);
+    transform: translateY(-5px);
+  }
+  &:hover:before {
+    opacity: 1;
+    transform: translateY(5px);
   }
 `;
 
