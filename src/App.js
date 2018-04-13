@@ -5,7 +5,6 @@ const divStyle = {
   display: "flex",
   flexWrap: "wrap"
 };
-
 class App extends Component {
   render() {
     return (
