@@ -18,7 +18,8 @@ class ContextPicture extends Component {
     return (
       <Picture
         src={
-          "http://unsplash.it/500/200?random=" + Math.floor(Math.random() * 500)
+          "https://unsplash.it/500/200?random=" +
+          Math.floor(Math.random() * 500)
         }
         height="200"
         alt="random"
